@@ -9,8 +9,12 @@ let state = {
   links: null,
 };
 
+const setState = (passage, links) => {
+  state = { passage: passage, links: links };
+};
+
 const start = () => {
-  state = { passage: data[0].text, links: data[0].links };
+  setState(data[0].text, data[0].links);
   passage.innerText = state.passage;
 };
 
