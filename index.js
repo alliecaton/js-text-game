@@ -18,16 +18,30 @@ const start = () => {
   passage.innerText = state.passage;
 };
 
+const updatePassage = () => {
+  passage.innerText = state.passage;
+};
+
 const createButtons = () => {
   state.links.map((link, i) => {
     let button = document.createElement("button");
     root.appendChild(button);
     button.innerText = link.name;
     button.setAttribute("id", link.pid);
+
+    button.addEventListener("click", (e) => {
+      for (let element of data) {
+        if (element.pid === e.target.id) {
+          setState(element.text, element.links);
+          console.log(state);
+          updatePassage();
+        }
+      }
+    });
   });
 };
 
 const rawData = gameData();
 const data = rawData.passages;
 const root = document.getElementById("game");
-const passage = document.getElementById("passage");
+let passage = document.getElementById("passage");
