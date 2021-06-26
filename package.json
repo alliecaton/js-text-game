@@ -1,0 +1,22 @@
+{
+  "name": "js-text-game",
+  "version": "1.0.0",
+  "description": "\"text adventure game\"",
+  "main": "game.js",
+  "scripts": {
+    "start": "open http://localhost:8080 && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alliecaton/js-text-game.git"
+  },
+  "author": "\"Allie\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alliecaton/js-text-game/issues"
+  },
+  "homepage": "https://github.com/alliecaton/js-text-game#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
