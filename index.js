@@ -1,12 +1,7 @@
 import { gameData } from "./module.js";
 window.addEventListener("DOMContentLoaded", (event) => {
-  if (data[0].pid === "1") {
-    state = { passage: data[0].text, links: data[0].links };
-    console.log(state);
-    passage.innerText = state.passage;
-    console.log(data[0].text);
-    button.innerText = data[0].links[0].name;
-  }
+  start();
+  createButtons();
 });
 
 let state = {
@@ -14,8 +9,21 @@ let state = {
   links: null,
 };
 
+const start = () => {
+  state = { passage: data[0].text, links: data[0].links };
+  passage.innerText = state.passage;
+};
+
+const createButtons = () => {
+  state.links.map((link, i) => {
+    let button = document.createElement("button");
+    root.appendChild(button);
+    button.innerText = link.name;
+    button.setAttribute("id", link.pid);
+  });
+};
+
 const rawData = gameData();
 const data = rawData.passages;
-
+const root = document.getElementById("game");
 const passage = document.getElementById("passage");
-const button = document.getElementById("first-choice");
