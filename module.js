@@ -2,37 +2,37 @@ export function gameData() {
   return {
     passages: [
       {
-        text: "You are woken up by a bang.\nYour room is dark, but bright sunlight filters through the curtains.\n[[Check the time on your phone->2]]",
+        text: "You are woken up by a bang.\nYour room is dark, but bright sunlight filters through the curtains.\n[[continue->cont]]",
         links: [
           {
-            name: "Check the time on your phone",
-            link: "2",
+            name: "continue",
+            link: "cont",
             pid: "2",
           },
         ],
-        name: "1",
+        name: "Start",
         pid: "1",
         position: {
-          x: "513",
-          y: "191",
+          x: "512",
+          y: "190",
         },
         tags: ["passage"],
       },
       {
-        text: "Double-click this passage to edit it.\n\n\n[[go to second passage ->3]]\n[[go to THIRD passage ->4]]",
+        text: "second passage gonna get into some options now uwu\n\n[[go to second passage -> second passage]]\n[[go to THIRD passage -> third passage]]",
         links: [
           {
             name: "go to second passage ",
-            link: "3",
+            link: " second passage",
             pid: "3",
           },
           {
             name: "go to THIRD passage ",
-            link: "4",
+            link: " third passage",
             pid: "4",
           },
         ],
-        name: "2",
+        name: "cont",
         pid: "2",
         position: {
           x: "477",
@@ -40,20 +40,20 @@ export function gameData() {
         },
       },
       {
-        text: "secnod passage wow\n\n[[answer option 1->5]]\n[[answer option 2->6]]",
+        text: "branching passage lajs;flaksjf;laksjdf;lasjdf;alsdkjf;alskjdf;lsjf\n\n[[answer option 1-> answer branch 1]]\n[[answer option 2-> answer branch 2]]",
         links: [
           {
             name: "answer option 1",
-            link: "5",
+            link: " answer branch 1",
             pid: "5",
           },
           {
             name: "answer option 2",
-            link: "6",
+            link: " answer branch 2",
             pid: "6",
           },
         ],
-        name: "3",
+        name: " second passage",
         pid: "3",
         position: {
           x: "477",
@@ -61,20 +61,20 @@ export function gameData() {
         },
       },
       {
-        text: "third passage alskdjfals;dkjfa\n\n[[answer option 3->7]]\n[[answer option 4->8]]",
+        text: "oh we're branching babey\n\n[[answer option 3-> answer branch 3]]\n[[answer option 4-> answer branch 4]]",
         links: [
           {
             name: "answer option 3",
-            link: "7",
+            link: " answer branch 3",
             pid: "7",
           },
           {
             name: "answer option 4",
-            link: "8",
+            link: " answer branch 4",
             pid: "8",
           },
         ],
-        name: "4",
+        name: " third passage",
         pid: "4",
         position: {
           x: "1062",
@@ -82,8 +82,8 @@ export function gameData() {
         },
       },
       {
-        text: "Double-click this passage to edit it.",
-        name: "5",
+        text: "first last node",
+        name: " answer branch 1",
         pid: "5",
         position: {
           x: "402",
@@ -91,8 +91,8 @@ export function gameData() {
         },
       },
       {
-        text: "Double-click this passage to edit it.",
-        name: "6",
+        text: "second last node\n",
+        name: " answer branch 2",
         pid: "6",
         position: {
           x: "552",
@@ -100,8 +100,8 @@ export function gameData() {
         },
       },
       {
-        text: "Double-click this passage to edit it.",
-        name: "7",
+        text: "third last node",
+        name: " answer branch 3",
         pid: "7",
         position: {
           x: "874",
@@ -109,8 +109,8 @@ export function gameData() {
         },
       },
       {
-        text: "Double-click this passage to edit it.",
-        name: "8",
+        text: "fourth last node",
+        name: " answer branch 4",
         pid: "8",
         position: {
           x: "1137",
